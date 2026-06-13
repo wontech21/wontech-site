@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Business Diagnostic — WONTech</title>
+<meta name="description" content="Start your free WONTech diagnostic. Tell us about your numbers, tools, and operations, and we'll show you exactly where revenue is leaking — and what plugging it is worth. You keep the report either way.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://wontech.info/diagnostic.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wontech.info/diagnostic.html">
+<meta property="og:title" content="Free Business Diagnostic — WONTech">
+<meta property="og:description" content="We map where your leads and dollars are leaking — and what plugging it is worth. Free, no obligation.">
+<meta property="og:site_name" content="WONTech, Inc.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="particles" id="particles"></div>
+
+<!-- NAV -->
+<nav id="nav" class="scrolled">
+  <a href="index.html" class="logo"><span>WON</span>TECH</a>
+  <div class="nav-links">
+    <a href="index.html#how">Growth OS</a>
+    <a href="index.html#proof">Proof</a>
+    <a href="1pm.html">Construction</a>
+    <a href="about.html">About</a>
+    <a class="nav-cta" href="index.html">&#8592; Home</a>
+  </div>
+  <button class="mobile-toggle"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mm">
+  <button class="mobile-close">&times;</button>
+  <a href="index.html#how">Growth OS</a>
+  <a href="index.html#proof">Proof</a>
+  <a href="1pm.html">Construction</a>
+  <a href="about.html">About</a>
+  <a href="index.html">Home</a>
+</div>
+
+<div class="diag-page">
+  <div class="q-header">
+    <div class="label label-center">Free Diagnostic</div>
+    <h2 class="title">Business Diagnostic<br><em>Questionnaire</em></h2>
+    <p class="desc" style="margin-top:1rem">The more we know going in, the more specific your leak report will be. This is the homework that makes a free 45-minute diagnostic worth your time.</p>
+  </div>
+
+  <div class="q-intro">
+    <p>There are four sections: <em>Your Numbers</em>, <em>Your Tools &amp; Data</em>, <em>How Work Gets Done</em>, and <em>In Your Own Words</em>. Everything you share stays confidential.</p>
+    <p>Don't overthink the answers. If you don't have an exact number, give us a rough estimate and note that it's a ballpark. A rough number is always better than a blank.</p>
+    <div class="q-confidential">Confidential</div>
+  </div>
+
+  <!-- Contact Info -->
+  <div class="q-contact">
+    <div class="q-field"><label class="q-label">Company Name</label><input class="q-input" type="text" placeholder="Your company name"></div>
+    <div class="q-field"><label class="q-label">Your Name</label><input class="q-input" type="text" placeholder="Full name"></div>
+    <div class="q-field"><label class="q-label">Your Role</label><input class="q-input" type="text" placeholder="Title or role"></div>
+    <div class="q-field"><label class="q-label">Phone</label><input class="q-input" type="tel" placeholder="(555) 555-5555"></div>
+    <div class="q-field"><label class="q-label">Email</label><input class="q-input" type="email" placeholder="you@company.com"></div>
+    <div class="q-field"><label class="q-label">Industry / Trade</label><input class="q-input" type="text" placeholder="e.g., Painting, Plumbing, HVAC, Roofing"></div>
+    <div class="q-field"><label class="q-label">Years in Business</label><input class="q-input" type="text" placeholder="#"></div>
+    <div class="q-field"><label class="q-label">Number of Locations</label><input class="q-input" type="text" placeholder="# or 'remote only'"></div>
+    <div class="q-field"><label class="q-label">How did you hear about us?</label><input class="q-input" type="text" placeholder="Referral, Google, event, etc."></div>
+    <div class="q-field"><label class="q-label">Who else will be involved in deciding whether to move forward?</label><input class="q-input" type="text" placeholder="Just me, partner, board, etc."></div>
+  </div>
+
+  <!-- Section Tabs -->
+  <div class="q-tabs" id="qTabs">
+    <button class="q-tab active" onclick="showPanel(0)">A. Your Numbers</button>
+    <button class="q-tab" onclick="showPanel(1)">B. Tools &amp; Data</button>
+    <button class="q-tab" onclick="showPanel(2)">C. Operations</button>
+    <button class="q-tab" onclick="showPanel(3)">D. Your Words</button>
+  </div>
+
+  <!-- PANEL A: YOUR NUMBERS -->
+  <div class="q-panel active" id="panelA">
+    <div class="q-group">
+      <div class="q-group-title">Revenue &amp; Sales</div>
+      <div class="q-group-desc">What you bring in. All figures from your most recent full year unless noted.</div>
+      <div class="q-field"><label class="q-label">Total revenue (gross sales) last year</label><input class="q-input" placeholder="$ amount"></div>
+      <div class="q-row">
+        <div class="q-field"><label class="q-label">Revenue the year before</label><input class="q-input" placeholder="$ amount"></div>
+        <div class="q-field"><label class="q-label">On track for this year</label><input class="q-input" placeholder="$ amount or range"></div>
+      </div>
+      <div class="q-field"><label class="q-label">Repeat/ongoing vs. one-time revenue split</label><input class="q-input" placeholder="e.g., 60% repeat / 40% one-time"></div>
+      <div class="q-field"><label class="q-label">Service lines and approximate % of revenue each</label><textarea class="q-textarea" placeholder="List them out"></textarea></div>
+      <div class="q-row">
+        <div class="q-field"><label class="q-label">Average contract/invoice/order size</label><input class="q-input" placeholder="$ amount"></div>
+        <div class="q-field"><label class="q-label">Top 5 client concentration</label><input class="q-input" placeholder="e.g., Top 5 = 40% of revenue"></div>
+      </div>
+      <div class="q-row">
+        <div class="q-field"><label class="q-label">Approximate number of active customers/clients</label><input class="q-input" placeholder="#"></div>
+        <div class="q-field"><label class="q-label">Busiest vs. slowest months</label><input class="q-input" placeholder="e.g., Jun-Aug peak, Jan-Feb slow"></div>
+      </div>
+      <div class="q-field"><label class="q-label">How do customers find you? Rough % by channel</label><input class="q-input" placeholder="e.g., 50% referral, 30% Google, 20% repeat"></div>
+      <div class="q-field"><label class="q-label">Where does your revenue data live?</label><input class="q-input" placeholder="QuickBooks? POS? Spreadsheet? Your head?"></div>
+    </div>
+    <div class="q-group">
+      <div class="q-group-title">Lead Flow &amp; Follow-Up</div>
+      <div class="q-group-desc">This is where most revenue leaks. Be honest &mdash; the gaps here are the opportunity.</div>
+      <div class="q-row">
+        <div class="q-field"><label class="q-label">Roughly how many leads/inquiries per month?</label><input class="q-input" placeholder="#"></div>
+        <div class="q-field"><label class="q-label">Approximate close rate</label><input class="q-input" placeholder="%"></div>
+      </div>
+      <div class="q-field"><label class="q-label">How fast does a new lead typically get a first response?</label><input class="q-input" placeholder="Minutes? Hours? Next day?"></div>
+      <div class="q-field"><label class="q-label">Who follows up on leads, and how is it tracked?</label><input class="q-input" placeholder="A person, a system, sticky notes, nobody?"></div>
+      <div class="q-field"><label class="q-label">Do you run paid ads? Monthly spend and on what?</label><input class="q-input" placeholder="e.g., $4k/mo Google Ads"></div>
+      <div class="q-field"><label class="q-label">Roughly what % of leads do you think slip through without a real follow-up?</label><input class="q-input" placeholder="Your best guess %"></div>
+    </div>
+    <div class="q-group">
+      <div class="q-group-title">Direct Costs</div>
+      <div class="q-group-desc">What it costs to do the work &mdash; the stuff that goes away if you stop working.</div>
+      <div class="q-field"><label class="q-label">Total direct costs / COGS last year</label><input class="q-input" placeholder="$ amount"></div>
+      <div class="q-row">
+        <div class="q-field"><label class="q-label">Labor (wages, benefits, payroll taxes)</label><input class="q-input" placeholder="$ or %"></div>
+        <div class="q-field"><label class="q-label">Materials / supplies / inventory</label><input class="q-input" placeholder="$ or %"></div>
+      </div>
+      <div class="q-row">
+        <div class="q-field"><label class="q-label">Subcontractors / outside help</label><input class="q-input" placeholder="$ or %"></div>
+        <div class="q-field"><label class="q-label">Equipment costs</label><input class="q-input" placeholder="$ or %"></div>
+      </div>
+      <div class="q-field"><label class="q-label">Where does your cost data live?</label><input class="q-input" placeholder="Same system as revenue? Different? Scattered?"></div>
+    </div>
+    <div class="q-group">
+      <div class="q-group-title">Your People</div>
+      <div class="q-row">
+        <div class="q-field"><label class="q-label">Full-time employees</label><input class="q-input" placeholder="#"></div>
+        <div class="q-field"><label class="q-label">Part-time / seasonal / contract</label><input class="q-input" placeholder="#"></div>
+      </div>
+      <div class="q-field"><label class="q-label">Total annual payroll (all-in)</label><input class="q-input" placeholder="$ amount"></div>
+      <div class="q-field"><label class="q-label">Hardest roles to fill right now and why</label><input class="q-input" placeholder="Which positions and why"></div>
+    </div>
+  </div>
+
+  <!-- PANEL B: YOUR TOOLS & DATA -->
+  <div class="q-panel" id="panelB">
+    <div class="q-group">
+      <div class="q-group-title">Software &amp; Apps</div>
+      <div class="q-group-desc">Every app, software, spreadsheet, or system anyone in your business uses. Include the obvious and the less obvious.</div>
+      <table class="q-tool-table">
+        <thead><tr><th>Category</th><th>Tool / App</th><th>What For?</th><th># Users</th><th>$/mo</th></tr></thead>
+        <tbody id="toolRows">
+          <tr><td><input placeholder="e.g., Accounting"></td><td><input placeholder="e.g., QuickBooks"></td><td><input placeholder="Invoicing, AP/AR"></td><td><input placeholder="#"></td><td><input placeholder="$"></td></tr>
+          <tr><td><input placeholder="e.g., CRM"></td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+          <tr><td><input placeholder="e.g., Lead/Calls"></td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+          <tr><td><input placeholder="e.g., Scheduling"></td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+          <tr><td><input placeholder="e.g., Estimating"></td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+          <tr><td><input placeholder="e.g., Payroll/HR"></td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+          <tr><td><input placeholder="e.g., Email/Chat"></td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+          <tr><td><input placeholder="e.g., Ads"></td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+        </tbody>
+      </table>
+      <button class="q-add-row" onclick="addToolRow()">+ Add Another Tool</button>
+    </div>
+    <div class="q-group">
+      <div class="q-group-title">How Do These Tools Talk to Each Other?</div>
+      <div class="q-field"><label class="q-label">Which tools are connected? <small>(Data flows automatically)</small></label><textarea class="q-textarea" placeholder="List the pairs, e.g., QuickBooks syncs with Gusto"></textarea></div>
+      <div class="q-field"><label class="q-label">Which tools require manual re-entry?</label><textarea class="q-textarea" placeholder="List the pairs"></textarea></div>
+      <div class="q-field"><label class="q-label">Single source of truth for customer info?</label><input class="q-input" placeholder="Which system?"></div>
+      <div class="q-row">
+        <div class="q-field"><label class="q-label">Source of truth for financials?</label><input class="q-input" placeholder="Which system?"></div>
+        <div class="q-field"><label class="q-label">Source of truth for jobs/projects?</label><input class="q-input" placeholder="Which system?"></div>
+      </div>
+    </div>
+    <div class="q-group">
+      <div class="q-group-title">Your Data Reality</div>
+      <div class="q-field"><label class="q-label">Can you pull up a real-time financial snapshot right now? Where?</label><textarea class="q-textarea" placeholder="Describe"></textarea></div>
+      <div class="q-row">
+        <div class="q-field"><label class="q-label">Time to produce a monthly report</label><input class="q-input" placeholder="Hours / days"></div>
+        <div class="q-field"><label class="q-label">How much reporting is manual?</label><input class="q-input" placeholder="e.g., 'most of it' or '80%'"></div>
+      </div>
+      <div class="q-field"><label class="q-label">Questions about your business you wish you could answer but can't</label><textarea class="q-textarea" placeholder="Describe"></textarea></div>
+      <div class="q-field"><label class="q-label">Name one thing you KNOW is happening in your business but can't prove with any report or number</label><textarea class="q-textarea" placeholder="Describe"></textarea></div>
+    </div>
+  </div>
+
+  <!-- PANEL C: HOW WORK GETS DONE -->
+  <div class="q-panel" id="panelC">
+    <div class="q-group">
+      <div class="q-group-title">The Life of a Job</div>
+      <div class="q-group-desc">How your business really runs day to day. Not how it's supposed to work on paper &mdash; what actually happens. The messier the truth, the more useful the diagnosis.</div>
+      <div class="q-field"><label class="q-label">Walk us through what happens from customer contact to job done and paid</label><textarea class="q-textarea" style="min-height:140px" placeholder="List the steps or tell the story"></textarea></div>
+      <div class="q-field"><label class="q-label">How do estimates, quotes, or proposals work?</label><input class="q-input" placeholder="Who builds them, how long, what format, win rate"></div>
+      <div class="q-field"><label class="q-label">Which handoff or step most often goes sideways?</label><textarea class="q-textarea" placeholder="Describe"></textarea></div>
+      <div class="q-field"><label class="q-label">How do scope changes get tracked and communicated?</label><textarea class="q-textarea" placeholder="Describe"></textarea></div>
+      <div class="q-field"><label class="q-label">Estimated annual cost of rework, mistakes, wasted materials</label><input class="q-input" placeholder="$ or % of revenue — your best guess"></div>
+    </div>
+    <div class="q-group">
+      <div class="q-group-title">Communication</div>
+      <div class="q-field"><label class="q-label">How do field/frontline workers communicate with the office?</label><input class="q-input" placeholder="Phone, texts, app, etc."></div>
+      <div class="q-field"><label class="q-label">How do you communicate with customers during a job?</label><input class="q-input" placeholder="Email, phone, portal, etc."></div>
+      <div class="q-field"><label class="q-label">How do you measure customer satisfaction?</label><input class="q-input" placeholder="Surveys, reviews, NPS, gut feeling, etc."></div>
+      <div class="q-field"><label class="q-label">After you finish a job, do you do anything to win work from the surrounding neighborhood?</label><textarea class="q-textarea" placeholder="Describe — or 'nothing'"></textarea></div>
+    </div>
+    <div class="q-group">
+      <div class="q-group-title">What's Holding You Back?</div>
+      <div class="q-field"><label class="q-label">Top 3 things slowing you down or keeping you from growing</label><textarea class="q-textarea" placeholder="List them"></textarea></div>
+      <div class="q-field"><label class="q-label">If you could fix one broken process tomorrow, what would it be? Why?</label><textarea class="q-textarea" placeholder="Describe"></textarea></div>
+      <div class="q-field"><label class="q-label">What does your company do better than competitors?</label><textarea class="q-textarea" placeholder="Describe"></textarea></div>
+    </div>
+    <div class="q-group">
+      <div class="q-group-title">The Overnight Question</div>
+      <div class="q-group-desc">If someone competent could watch your business around the clock...</div>
+      <div class="q-field"><label class="q-label">If someone reviewed everything that happened today and told you the 3 things you need to know tomorrow morning &mdash; what would you want them to look for?</label><textarea class="q-textarea" style="min-height:100px" placeholder="Describe"></textarea></div>
+      <div class="q-field"><label class="q-label">Is there a recurring problem that keeps coming back &mdash; gets fixed temporarily but never stays fixed?</label><textarea class="q-textarea" placeholder="Describe"></textarea></div>
+    </div>
+  </div>
+
+  <!-- PANEL D: IN YOUR OWN WORDS -->
+  <div class="q-panel" id="panelD">
+    <div class="q-group">
+      <div class="q-group-title">In Your Own Words</div>
+      <div class="q-group-desc">This space is yours. Nobody knows your business better than you. It doesn't have to be polished &mdash; just write it how it comes to you. We read everything.</div>
+      <div class="q-field"><label class="q-label">Tell me the story of your business in a few paragraphs. How it started, where it is now, where you want it to go.</label><textarea class="q-textarea" style="min-height:160px" placeholder="Your story"></textarea></div>
+      <div class="q-field"><label class="q-label">Describe a recent week that went badly. What happened, what went wrong, and what would have needed to be different?</label><textarea class="q-textarea" style="min-height:140px" placeholder="Be specific"></textarea></div>
+      <div class="q-field"><label class="q-label">What would make working with us worth every penny to you? Be specific.</label><textarea class="q-textarea" style="min-height:100px" placeholder="What does success look like?"></textarea></div>
+      <div class="q-field"><label class="q-label">Have you tried to fix any of this before &mdash; on your own, with another consultant, or with technology &mdash; and it didn't work? What happened?</label><textarea class="q-textarea" style="min-height:120px" placeholder="Describe"></textarea></div>
+      <div class="q-field"><label class="q-label">What does success look like in 12 months? In 3 years?</label><textarea class="q-textarea" style="min-height:100px" placeholder="Describe"></textarea></div>
+      <div class="q-field"><label class="q-label">Anything else you want us to know before we sit down?</label><textarea class="q-textarea" style="min-height:100px" placeholder="Open response"></textarea></div>
+    </div>
+    <div class="q-group" style="background:var(--bg);border:1px solid var(--border);padding:2rem;margin-top:1rem">
+      <div class="q-group-title">What Happens Next</div>
+      <div class="q-group-desc" style="margin-bottom:0">Once we receive this, we dig in. We map where your leads and dollars are leaking, put a conservative number on what plugging it is worth, and bring it back to you as a personalized leak report. You keep it whether or not we work together.</div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div class="q-nav">
+    <button class="btn btn-s" id="qPrev" onclick="navPanel(-1)" style="visibility:hidden">&#8592; Previous</button>
+    <div class="q-progress" id="qProgress">Section 1 of 4</div>
+    <button class="btn btn-p" id="qNext" onclick="navPanel(1)">Next Section &#8594;</button>
+  </div>
+
+  <!-- Success State -->
+  <div class="q-success" id="qSuccess">
+    <h2 class="title">Questionnaire Received.<br><em>We'll be in touch.</em></h2>
+    <p class="desc" style="margin:1rem auto 0;text-align:center">We'll review your responses and get back to you within 2 business days to schedule your free diagnostic.</p>
+    <p class="q-fallback-note" id="qFallbackNote" style="display:none">Heads up: our submission service didn't confirm receipt, so we've opened an email with your contact details for you to send instead. If your email client didn't open, reach us directly at <strong>won@wontech.info</strong>.</p>
+    <div style="margin-top:2.5rem"><a class="btn btn-s" href="index.html">Back to Home</a></div>
+  </div>
+</div>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

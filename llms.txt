@@ -1,0 +1,32 @@
+# WONTech, Inc.
+
+> Product-driven consulting firm. WONTech builds the operating intelligence businesses can't build for themselves — capturing their data, connecting their systems, and putting an AI agent on top that actually knows the business. Two divisions: Growth OS for service businesses, and WON Project Map (1PM) for construction.
+
+WONTech is not a generic SaaS. Each client gets a customized build delivered through human partners; the software is the consulting delivery mechanism. Founded by Wendell Nunes Jr. The platform was first proven inside a live, multi-location restaurant over fourteen months of real operations before becoming a product.
+
+## Flagship offer: WONTech Growth OS
+
+A done-for-you AI revenue system for local trade and home-service businesses ($1–10M revenue), especially those already running paid lead generation.
+
+The core thesis: most contractors at this level already generate enough leads to double their business — they're just losing them on the back end through slow follow-up, no lead scoring, no neighborhood leverage, and ad spend that optimizes for clicks instead of revenue. WONTech plugs those leaks.
+
+What the system does end-to-end: captures every call/form/click, scores each lead on property and intent data, texts hot leads to the owner in seconds, follows up instantly, collects job photos, books estimates, drafts proposals (a human approves before anything customer-facing goes out), tracks deals to revenue, uploads offline conversions to Google Ads, runs neighborhood "ripple" postcard campaigns off closed jobs, requests reviews, and reports everything in a 60-second daily briefing. The owner's only interface is that briefing plus hot-lead texts — there is no dashboard to log into.
+
+Guiding principle: "The agent drafts — humans decide." ROI framing: it pays for itself in 60 days, usually on the first or second recaptured job.
+
+Live vertical: painting. Expansion verticals (configuration, not rebuild): plumbing, HVAC, roofing, electrical, landscaping.
+
+Sales motion: a free 45-minute diagnostic produces a personalized "leak report" — the recoverable revenue, the conservative assumptions behind it, and the ROI. The prospect keeps the report whether or not they sign.
+
+## Second division: WON Project Map (1PM)
+
+Construction rework forensics for general contractors and CM firms ($50M–$500M+ contract value). Connects read-only to Procore, cost systems, Civil 3D, and project communications; traces the causal chain from an unanswered RFI to a downstream change order; quantifies the avoidable cost; and produces evidence-grade documentation for owner negotiations and dispute resolution. It never writes back to any source system. This is a separate enterprise platform with a different buyer and sales motion from Growth OS.
+
+## Pages
+- https://wontech.info/ — Growth OS (flagship) homepage
+- https://wontech.info/diagnostic.html — free business diagnostic questionnaire
+- https://wontech.info/1pm.html — construction division (1PM / WON Project Map)
+- https://wontech.info/about.html — company and divisions
+
+## Contact
+- Email: won@wontech.info

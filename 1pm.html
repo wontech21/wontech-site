@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1PM (WON Project Map) — Construction Rework Forensics · WONTech</title>
+
+<!-- SEO -->
+<meta name="description" content="1PM (WON Project Map) is WONTech's construction division — a rework-forensics platform for general contractors. It connects to Procore, your cost system, and project comms (read-only), traces the causal chain from an unanswered RFI to a downstream change order, and quantifies the avoidable cost.">
+<meta name="keywords" content="construction rework forensics, WON Project Map, 1PM, Procore integration, RFI to change order, cost attribution, general contractor software, construction data analytics, Civil 3D Procore, dispute documentation">
+<meta name="author" content="WONTech, Inc.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://wontech.info/1pm.html">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wontech.info/1pm.html">
+<meta property="og:title" content="1PM — Construction Rework Forensics">
+<meta property="og:description" content="Connect the systems. Trace the dollars. WONTech's construction division turns fragmented project logs into a causal map of what went wrong, where it started, and what it cost.">
+<meta property="og:site_name" content="WONTech, Inc.">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="1PM (WON Project Map) — Construction Rework Forensics">
+<meta name="twitter:description" content="Reads across Procore, cost systems, and comms — read-only — to trace rework to its root cause and quantify the avoidable dollars.">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Product",
+  "name":"1PM (WON Project Map)",
+  "brand":{"@type":"Brand","name":"WONTech"},
+  "category":"Construction rework forensics software",
+  "description":"A rework-forensics platform for general contractors. Connects read-only to Procore, cost systems, and project communications, traces the causal chain from root cause to cost impact, and produces evidence-grade documentation."
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="particles" id="particles"></div>
+
+<!-- NAV -->
+<nav id="nav" class="scrolled">
+  <a href="index.html" class="logo"><span>WON</span>TECH</a>
+  <div class="nav-links">
+    <a href="index.html#how">Growth OS</a>
+    <a href="1pm.html" class="active">Construction</a>
+    <a href="about.html">About</a>
+    <a class="nav-cta" href="diagnostic.html">Book A Diagnostic</a>
+  </div>
+  <button class="mobile-toggle"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mm">
+  <button class="mobile-close">&times;</button>
+  <a href="index.html#how">Growth OS</a>
+  <a href="1pm.html">Construction</a>
+  <a href="about.html">About</a>
+  <a href="diagnostic.html">Book A Diagnostic</a>
+</div>
+
+<div class="opm-page">
+  <section class="opm-page-content" style="padding-top:7rem;position:relative">
+    <div class="opm-glow" style="top:0"></div>
+    <div class="opm-hero-centered">
+      <div class="opm-name rs">1PM</div>
+      <div class="label rs" style="justify-content:center;transition-delay:.05s">WON Project Map &middot; Construction Division</div>
+      <h2 class="title r" style="text-align:center;transition-delay:.1s">Construction rework forensics.<br><em>Connect the systems. Trace the dollars.</em></h2>
+      <p class="desc r" style="margin:1.5rem auto 0;text-align:center;max-width:640px;transition-delay:.18s">1PM is WONTech's construction division. It doesn't replace your tools &mdash; it reads across them, connecting Civil 3D drawings, Procore logs, cost data, and project communications into a single causal map of your project's reality.</p>
+      <p class="desc r" style="margin:1rem auto 0;text-align:center;max-width:640px;transition-delay:.24s">For the first time, see what went wrong, where it started, and what it actually cost &mdash; retroactively, across every system.</p>
+    </div>
+
+    <!-- Product Demo Mockup (Scan Map) -->
+    <div class="demo-wrap rs" style="transition-delay:.1s">
+      <div class="demo-label">Scan Map &mdash; Product Preview</div>
+      <div class="demo-frame">
+        <div class="demo-chrome">
+          <div class="demo-dot r"></div><div class="demo-dot y"></div><div class="demo-dot g"></div>
+          <div class="demo-url">app.1pm.io/project/highland-crossing/scan</div>
+        </div>
+        <div class="demo-body">
+          <div class="lf-bar">
+            <div class="lf-pill" style="background:rgba(52,199,89,.15);border-color:rgba(52,199,89,.3);color:#34c759">PROP</div>
+            <div class="lf-pill" style="background:rgba(245,166,35,.12);border-color:rgba(245,166,35,.25);color:#f5a623">SETBACK</div>
+            <div class="lf-pill" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12);color:#ccc">ROAD</div>
+            <div class="lf-pill lf-active" style="background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:#fff">BLDG</div>
+            <div class="lf-pill" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.08);color:#999">PARK</div>
+            <div class="lf-pill" style="background:rgba(0,113,227,.2);border-color:rgba(0,113,227,.35);color:#0071e3">WATER</div>
+            <div class="lf-pill" style="background:rgba(229,77,66,.15);border-color:rgba(229,77,66,.3);color:#e54d42">SEWER</div>
+            <div class="lf-pill" style="background:rgba(232,118,58,.15);border-color:rgba(232,118,58,.3);color:#e8763a">ELEC</div>
+            <div class="lf-pill" style="background:rgba(52,199,89,.12);border-color:rgba(52,199,89,.25);color:#34c759">STORM</div>
+            <div class="lf-pill" style="background:rgba(175,82,222,.15);border-color:rgba(175,82,222,.3);color:#af52de">TELE</div>
+            <div class="lf-pill" style="background:rgba(90,159,212,.12);border-color:rgba(90,159,212,.25);color:#5a9fd4">WALK</div>
+            <div class="lf-pill" style="background:rgba(245,166,35,.1);border-color:rgba(245,166,35,.2);color:#f5a623">GAS</div>
+            <div class="lf-pill" style="background:rgba(52,199,89,.08);border-color:rgba(52,199,89,.18);color:#34c759">GRADE</div>
+          </div>
+          <div class="sm-search">Search objects, docs, comms, emails...</div>
+          <div class="sm-counts"><span style="color:#aaa">&#9632; 179</span> <span style="color:#e54d42">&#9679; 65</span></div>
+          <div class="sm-canvas">
+            <svg viewBox="0 0 800 520" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+              <rect x="40" y="30" width="720" height="460" fill="none" stroke="#3ddf66" stroke-width=".8" stroke-dasharray="6,4" opacity=".45"/>
+              <rect x="55" y="45" width="690" height="430" fill="none" stroke="#ffba3d" stroke-width=".6" stroke-dasharray="4,3" opacity=".4"/>
+              <line x1="50" y1="70" x2="750" y2="70" stroke="#0091ff" stroke-width="1" opacity=".75"/>
+              <line x1="50" y1="76" x2="750" y2="76" stroke="#0091ff" stroke-width=".7" opacity=".55"/>
+              <line x1="60" y1="90" x2="740" y2="90" stroke="#ff5548" stroke-width="1" opacity=".7"/>
+              <line x1="60" y1="96" x2="740" y2="96" stroke="#ff5548" stroke-width=".7" opacity=".5"/>
+              <line x1="55" y1="108" x2="745" y2="108" stroke="#ff8a4a" stroke-width=".9" opacity=".65"/>
+              <line x1="50" y1="120" x2="750" y2="120" stroke="#3ddf66" stroke-width=".9" opacity=".6"/>
+              <line x1="55" y1="130" x2="745" y2="130" stroke="#c46ef0" stroke-width=".6" opacity=".55"/>
+              <line x1="50" y1="140" x2="750" y2="140" stroke="#6ab4ee" stroke-width=".7" opacity=".55"/>
+              <line x1="55" y1="150" x2="745" y2="150" stroke="#ffba3d" stroke-width=".6" opacity=".5"/>
+              <line x1="200" y1="70" x2="200" y2="150" stroke="#0091ff" stroke-width=".5" opacity=".5"/>
+              <line x1="420" y1="70" x2="420" y2="150" stroke="#ff5548" stroke-width=".5" opacity=".5"/>
+              <line x1="600" y1="70" x2="600" y2="150" stroke="#ff8a4a" stroke-width=".5" opacity=".5"/>
+              <line x1="50" y1="340" x2="750" y2="340" stroke="#666" stroke-width=".5" stroke-dasharray="8,4" opacity=".5"/>
+              <line x1="380" y1="40" x2="380" y2="500" stroke="#666" stroke-width=".4" stroke-dasharray="8,4" opacity=".4"/>
+              <rect x="100" y="170" width="180" height="120" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="1"/>
+              <rect x="110" y="180" width="60" height="40" fill="none" stroke="rgba(255,255,255,.28)" stroke-width=".6"/>
+              <rect x="185" y="180" width="85" height="55" fill="none" stroke="rgba(255,255,255,.28)" stroke-width=".6"/>
+              <rect x="110" y="235" width="70" height="45" fill="none" stroke="rgba(255,255,255,.22)" stroke-width=".5"/>
+              <rect x="195" y="248" width="75" height="32" fill="none" stroke="rgba(255,255,255,.22)" stroke-width=".5"/>
+              <text x="165" y="210" font-size="5" fill="rgba(255,255,255,.22)" font-family="monospace" text-anchor="middle">BLDG 1 — COMMERCIAL</text>
+              <rect x="120" y="300" width="50" height="30" fill="none" stroke="rgba(255,255,255,.18)" stroke-width=".5"/>
+              <text x="145" y="318" font-size="3.5" fill="rgba(255,255,255,.16)" font-family="monospace" text-anchor="middle">MECH YARD</text>
+              <rect x="80" y="175" width="15" height="25" fill="none" stroke="rgba(255,255,255,.18)" stroke-width=".5"/>
+              <text x="87" y="190" font-size="3" fill="rgba(255,255,255,.14)" font-family="monospace" text-anchor="middle">ENTRY</text>
+              <rect x="320" y="175" width="140" height="90" fill="none" stroke="rgba(255,255,255,.38)" stroke-width="1"/>
+              <rect x="330" y="185" width="50" height="35" fill="none" stroke="rgba(255,255,255,.22)" stroke-width=".5"/>
+              <rect x="395" y="185" width="55" height="50" fill="none" stroke="rgba(255,255,255,.22)" stroke-width=".5"/>
+              <rect x="330" y="230" width="120" height="25" fill="none" stroke="rgba(255,255,255,.18)" stroke-width=".5"/>
+              <text x="390" y="210" font-size="5" fill="rgba(255,255,255,.22)" font-family="monospace" text-anchor="middle">BLDG 2 — OFFICE</text>
+              <rect x="520" y="165" width="175" height="110" fill="none" stroke="rgba(255,255,255,.38)" stroke-width="1"/>
+              <rect x="530" y="175" width="55" height="40" fill="none" stroke="rgba(255,255,255,.22)" stroke-width=".5"/>
+              <rect x="600" y="175" width="85" height="55" fill="none" stroke="rgba(255,255,255,.22)" stroke-width=".5"/>
+              <rect x="530" y="225" width="70" height="40" fill="none" stroke="rgba(255,255,255,.18)" stroke-width=".5"/>
+              <rect x="615" y="240" width="70" height="25" fill="none" stroke="rgba(255,255,255,.18)" stroke-width=".5"/>
+              <text x="607" y="200" font-size="5" fill="rgba(255,255,255,.22)" font-family="monospace" text-anchor="middle">BLDG 3 — RESIDENTIAL</text>
+              <rect x="100" y="380" width="250" height="85" fill="none" stroke="rgba(255,255,255,.22)" stroke-width=".6"/>
+              <line x1="120" y1="395" x2="120" y2="450" stroke="rgba(255,255,255,.1)" stroke-width=".4"/><line x1="140" y1="395" x2="140" y2="450" stroke="rgba(255,255,255,.1)" stroke-width=".4"/><line x1="160" y1="395" x2="160" y2="450" stroke="rgba(255,255,255,.1)" stroke-width=".4"/><line x1="180" y1="395" x2="180" y2="450" stroke="rgba(255,255,255,.1)" stroke-width=".4"/><line x1="200" y1="395" x2="200" y2="450" stroke="rgba(255,255,255,.1)" stroke-width=".4"/><line x1="220" y1="395" x2="220" y2="450" stroke="rgba(255,255,255,.1)" stroke-width=".4"/><line x1="240" y1="395" x2="240" y2="450" stroke="rgba(255,255,255,.1)" stroke-width=".4"/><line x1="260" y1="395" x2="260" y2="450" stroke="rgba(255,255,255,.1)" stroke-width=".4"/><line x1="280" y1="395" x2="280" y2="450" stroke="rgba(255,255,255,.1)" stroke-width=".4"/><line x1="300" y1="395" x2="300" y2="450" stroke="rgba(255,255,255,.1)" stroke-width=".4"/><line x1="320" y1="395" x2="320" y2="450" stroke="rgba(255,255,255,.1)" stroke-width=".4"/>
+              <text x="225" y="430" font-size="5" fill="rgba(255,255,255,.16)" font-family="monospace" text-anchor="middle">SURFACE PARKING</text>
+              <rect x="420" y="370" width="120" height="70" fill="none" stroke="rgba(255,255,255,.28)" stroke-width=".6"/>
+              <rect x="430" y="380" width="40" height="30" fill="none" stroke="rgba(255,255,255,.15)" stroke-width=".4"/>
+              <rect x="480" y="380" width="50" height="45" fill="none" stroke="rgba(255,255,255,.15)" stroke-width=".4"/>
+              <rect x="570" y="385" width="90" height="55" fill="none" stroke="rgba(255,255,255,.22)" stroke-width=".6"/>
+              <rect x="580" y="395" width="35" height="30" fill="none" stroke="rgba(255,255,255,.15)" stroke-width=".4"/>
+              <rect x="625" y="395" width="25" height="35" fill="none" stroke="rgba(255,255,255,.15)" stroke-width=".4"/>
+              <rect x="680" y="360" width="60" height="20" fill="none" stroke="rgba(255,255,255,.18)" stroke-width=".5"/>
+              <text x="710" y="373" font-size="3.5" fill="rgba(255,255,255,.14)" font-family="monospace" text-anchor="middle">CANOPY</text>
+              <rect x="290" y="300" width="40" height="25" fill="none" stroke="rgba(255,255,255,.18)" stroke-width=".5"/>
+              <text x="310" y="316" font-size="3" fill="rgba(255,255,255,.14)" font-family="monospace" text-anchor="middle">DOCK</text>
+              <rect x="540" y="290" width="80" height="35" fill="none" stroke="rgba(61,223,102,.3)" stroke-width=".5"/>
+              <text x="580" y="312" font-size="3.5" fill="rgba(61,223,102,.22)" font-family="monospace" text-anchor="middle">GREEN ROOF</text>
+              <rect x="695" y="290" width="45" height="30" fill="none" stroke="rgba(255,186,61,.3)" stroke-width=".5" stroke-dasharray="2,2"/>
+              <text x="717" y="308" font-size="3" fill="rgba(255,186,61,.22)" font-family="monospace" text-anchor="middle">PATIO</text>
+              <line x1="90" y1="290" x2="250" y2="350" stroke="rgba(61,223,102,.22)" stroke-width=".4" stroke-dasharray="3,3"/>
+              <line x1="500" y1="300" x2="650" y2="350" stroke="rgba(61,223,102,.18)" stroke-width=".4" stroke-dasharray="3,3"/>
+              <circle cx="640" cy="350" r="12" fill="none" stroke="rgba(106,180,238,.3)" stroke-width=".6"/>
+              <circle cx="200" cy="350" r="8" fill="none" stroke="rgba(255,255,255,.15)" stroke-width=".4"/>
+              <path d="M 50,490 Q 55,480 70,480" fill="none" stroke="rgba(106,180,238,.35)" stroke-width=".6"/>
+              <path d="M 750,490 Q 745,480 730,480" fill="none" stroke="rgba(106,180,238,.35)" stroke-width=".6"/>
+              <line x1="50" y1="490" x2="750" y2="490" stroke="rgba(106,180,238,.3)" stroke-width=".6"/>
+              <g stroke="rgba(255,255,255,.15)" stroke-width=".4"><line x1="197" y1="68" x2="203" y2="72"/><line x1="203" y1="68" x2="197" y2="72"/></g>
+              <g stroke="rgba(255,255,255,.15)" stroke-width=".4"><line x1="417" y1="68" x2="423" y2="72"/><line x1="423" y1="68" x2="417" y2="72"/></g>
+              <g stroke="rgba(255,255,255,.15)" stroke-width=".4"><line x1="597" y1="68" x2="603" y2="72"/><line x1="603" y1="68" x2="597" y2="72"/></g>
+              <circle cx="150" cy="200" r="3.5" fill="#ff4f42" opacity=".95"/><circle cx="150" cy="200" r="3.5" fill="#ff4f42" opacity=".35"><animate attributeName="r" values="3;7;3" dur="2.5s" repeatCount="indefinite"/><animate attributeName="opacity" values=".3;0;.3" dur="2.5s" repeatCount="indefinite"/></circle>
+              <circle cx="230" cy="220" r="3.5" fill="#ff4f42" opacity=".95"/>
+              <circle cx="190" cy="250" r="3.5" fill="#ff4f42" opacity=".95"/>
+              <circle cx="350" cy="195" r="3.5" fill="#ff4f42" opacity=".95"/>
+              <circle cx="410" cy="210" r="3.5" fill="#ff4f42" opacity=".95"/><circle cx="410" cy="210" r="3.5" fill="#ff4f42" opacity=".35"><animate attributeName="r" values="3;7;3" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".3;0;.3" dur="3s" repeatCount="indefinite"/></circle>
+              <circle cx="440" cy="250" r="3.5" fill="#ff4f42" opacity=".95"/>
+              <circle cx="550" cy="190" r="3.5" fill="#ff4f42" opacity=".95"/>
+              <circle cx="640" cy="200" r="3.5" fill="#ff4f42" opacity=".95"/>
+              <circle cx="620" cy="240" r="3.5" fill="#ff4f42" opacity=".95"/><circle cx="620" cy="240" r="3.5" fill="#ff4f42" opacity=".35"><animate attributeName="r" values="3;7;3" dur="2.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".3;0;.3" dur="2.8s" repeatCount="indefinite"/></circle>
+              <circle cx="680" cy="250" r="3.5" fill="#ff4f42" opacity=".95"/>
+              <circle cx="310" cy="290" r="3.5" fill="#ff4f42" opacity=".95"/>
+              <circle cx="160" cy="400" r="3" fill="#ff4f42" opacity=".85"/>
+              <circle cx="250" cy="420" r="3" fill="#ff4f42" opacity=".85"/>
+              <circle cx="470" cy="400" r="3.5" fill="#ff4f42" opacity=".95"/>
+              <circle cx="600" cy="410" r="3.5" fill="#ff4f42" opacity=".95"/>
+              <circle cx="130" cy="260" r="3" fill="#ff4f42" opacity=".85"/>
+              <circle cx="500" cy="270" r="3" fill="#ff4f42" opacity=".85"/>
+              <text x="400" y="62" font-size="3" fill="rgba(255,255,255,.12)" font-family="monospace" text-anchor="middle">STA 12+50.00</text>
+              <text x="100" y="498" font-size="3" fill="rgba(106,180,238,.25)" font-family="monospace">PROP. LINE — SOUTH</text>
+            </svg>
+            <div class="sm-bottom">
+              <div class="sm-hint">Scroll to zoom &middot; Drag to pan</div>
+              <div class="sm-badge">1PM &middot; UNIFIED DEMO</div>
+              <div class="sm-zoom"><span>&#8722;</span><span>Reset</span><span>+</span></div>
+            </div>
+          </div>
+          <div class="sm-sidebar">
+            <div class="sms-header">1PM SCAN</div>
+            <div class="sms-sub">Click any element, zone, or node.</div>
+            <div class="sms-section">PROJECT SUMMARY</div>
+            <div class="sms-grid">
+              <div class="sms-stat"><span class="sms-num" style="color:#fff">179</span><span class="sms-lbl">Total Docs</span></div>
+              <div class="sms-stat"><span class="sms-num" style="color:#e54d42">32</span><span class="sms-lbl">Open</span></div>
+              <div class="sms-stat"><span class="sms-num" style="color:#e54d42">27</span><span class="sms-lbl">Punch</span></div>
+              <div class="sms-stat"><span class="sms-num" style="color:#e54d42">29</span><span class="sms-lbl">RFI</span></div>
+              <div class="sms-stat"><span class="sms-num" style="color:#0071e3">27</span><span class="sms-lbl">Submittal</span></div>
+              <div class="sms-stat"><span class="sms-num" style="color:#f5a623">18</span><span class="sms-lbl">CO</span></div>
+              <div class="sms-stat"><span class="sms-num" style="color:#34c759">30</span><span class="sms-lbl">Inspection</span></div>
+              <div class="sms-stat"><span class="sms-num" style="color:#f5a623">4</span><span class="sms-lbl">T&amp;M</span></div>
+              <div class="sms-stat"><span class="sms-num" style="color:#6366f1">24</span><span class="sms-lbl">Message</span></div>
+              <div class="sms-stat"><span class="sms-num" style="color:#6366f1">20</span><span class="sms-lbl">Email</span></div>
+            </div>
+            <div class="sms-bridge"><span style="color:#34c759">&harr; Cross-System Bridge</span><br><span style="font-size:.4rem;color:var(--text-dim)">18 linked pairs &middot; 14 synced &middot; <span style="color:#e54d42">4 mismatches</span></span></div>
+            <div class="sms-section">ZONES</div>
+            <div class="sms-zone"><span>Zone 1: Commercial Core</span><span style="color:#e54d42">Blocked 48%</span><div class="sms-bar"><div style="width:48%;background:#e54d42"></div></div></div>
+            <div class="sms-zone"><span>Zone 2: Office &amp; Central</span><span style="color:#f5a623">Gates Open 56%</span><div class="sms-bar"><div style="width:56%;background:#f5a623"></div></div></div>
+            <div class="sms-zone"><span>Zone 3: Residential &amp; Hotel</span><span style="color:#f5a623">Gates Open 52%</span><div class="sms-bar"><div style="width:52%;background:#f5a623"></div></div></div>
+            <div class="sms-zone"><span>Zone 4: Surface Parking</span><span style="color:#f5a623">Gates Open 72%</span><div class="sms-bar"><div style="width:72%;background:#e8b868"></div></div></div>
+            <div class="sms-zone"><span>Zone 5: Site &amp; Perimeter</span><span style="color:#34c759">Ready 86%</span><div class="sms-bar"><div style="width:86%;background:#34c759"></div></div></div>
+            <div class="sms-section">STRUCTURES</div>
+            <div class="sms-struct">Building 1 — Commercial <span style="color:#e54d42">&#9679;2 &#9888;11</span></div>
+            <div class="sms-struct">Bldg 1 — Main Entry <span style="color:#e54d42">&#9679;1 &#9888;4</span></div>
+            <div class="sms-struct">Bldg 1 — Mechanical Yard <span style="color:var(--text-dim)">2</span></div>
+            <div class="sms-struct">Loading Dock <span style="color:var(--text-dim)">2</span></div>
+            <div class="sms-struct">Building 2 — Office <span style="color:#e54d42">&#9679;1 &#9888;9</span></div>
+            <div class="sms-struct">Transit Canopy <span style="color:var(--text-dim)">2</span></div>
+            <div class="sms-struct" style="color:#34c759">Bldg 1 — Green Roof <span>&#9679;1 &#9888;2</span></div>
+            <div class="sms-struct" style="color:#d4a054">Retail Patio <span>1</span></div>
+          </div>
+          <div class="sm-viewtabs">
+            <div class="sm-vtab active">&#9638; SCAN</div>
+            <div class="sm-vtab">&#9830; GRAPH</div>
+            <div class="sm-vtab">&#9679; COMMS</div>
+          </div>
+        </div>
+      </div>
+      <div class="demo-glow"></div>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar rs"><span class="p-icon">&#9678;</span><div class="p-num">01</div><div class="p-title">Scan Map</div><div class="p-desc">Automated ingestion across your existing platforms. No migration, no disruption &mdash; just connection.</div></div>
+      <div class="pillar rs" style="transition-delay:.08s"><span class="p-icon">&#9169;</span><div class="p-num">02</div><div class="p-title">Cross-System Bridge</div><div class="p-desc">Links data objects across platforms &mdash; an RFI in Procore to a change order in your cost system to a drawing revision in Civil 3D.</div></div>
+      <div class="pillar rs" style="transition-delay:.16s"><span class="p-icon">&#11043;</span><div class="p-num">03</div><div class="p-title">Causality Graph</div><div class="p-desc">Traces the chain from root cause to cost impact. Turns fragmented logs into a narrative of what actually happened.</div></div>
+      <div class="pillar rs" style="transition-delay:.24s"><span class="p-icon">&#9672;</span><div class="p-num">04</div><div class="p-title">Readiness Engine</div><div class="p-desc">Forward-looking risk scoring based on patterns already surfaced. Prevention, not just diagnosis.</div></div>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-cell r" style="transition-delay:.05s"><div class="stat-val" data-target="31.3" data-prefix="$" data-suffix="B">$0</div><div class="stat-label">Annual U.S. Rework Cost</div></div>
+      <div class="stat-cell r" style="transition-delay:.12s"><div class="stat-val" data-target="52" data-suffix="%">0</div><div class="stat-label">Of Rework Is Avoidable</div></div>
+      <div class="stat-cell r" style="transition-delay:.19s"><div class="stat-val">$???</div><div class="stat-label">What Your Last Project Lost</div></div>
+    </div>
+  </section>
+
+  <!-- READ-ONLY + BUYER -->
+  <section class="pad" style="padding-top:5rem;padding-bottom:4rem">
+    <div class="container">
+      <div class="wwd-grid">
+        <div>
+          <div class="label r">Built For The Way You Already Work</div>
+          <h2 class="title r" style="transition-delay:.08s">Read-only.<br><em>By design.</em></h2>
+          <p class="desc r" style="transition-delay:.16s;margin-top:1.5rem">1PM never writes back to Procore or any source system. It observes, links, and explains &mdash; so adopting it carries no risk to your existing data or workflows. Engagements start as a fixed-fee forensic analysis and graduate to live monitoring.</p>
+        </div>
+        <div class="wwd-right">
+          <div class="capability r" style="transition-delay:.1s"><div class="cap-title">Who it's for</div><div class="cap-desc">General contractors and CM firms running $50M&ndash;$500M+ in annual contract value, typically on Procore, with rework-heavy projects.</div><div class="cap-tag">Buyer</div></div>
+          <div class="capability r" style="transition-delay:.18s"><div class="cap-title">What it produces</div><div class="cap-desc">Evidence-grade documentation that attributes avoidable cost to a sourced causal chain &mdash; for owner negotiations, dispute resolution, and process improvement.</div><div class="cap-tag">Output</div></div>
+          <div class="capability r" style="transition-delay:.26s"><div class="cap-title">A separate division</div><div class="cap-desc">1PM is its own enterprise platform, distinct from WONTech Growth OS &mdash; different buyer, different stack, different sales motion.</div><div class="cap-tag">Construction</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+  <section class="cta">
+    <div class="label label-center r">Construction</div>
+    <h2 class="title r" style="transition-delay:.08s">See what your last<br>project actually cost.</h2>
+    <p class="desc r" style="transition-delay:.16s;text-align:center">Start with a forensic diagnostic on a completed project. We map the rework, trace the cause, and put a number on it.</p>
+    <div class="cta-btns r" style="transition-delay:.24s">
+      <a class="btn btn-p" href="diagnostic.html">Book A Diagnostic &#8594;</a>
+      <a class="btn btn-s" href="index.html">Back To WONTech</a>
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div><div class="f-brand"><span>WON</span>TECH, INC.</div><div class="f-tagline">1PM (WON Project Map) is WONTech's construction division &mdash; rework forensics for general contractors.</div></div>
+    <div><div class="f-col-title">Navigate</div><ul class="f-links"><li><a href="index.html">Growth OS</a></li><li><a href="1pm.html">Construction (1PM)</a></li><li><a href="about.html">About</a></li><li><a href="diagnostic.html">Diagnostic</a></li></ul></div>
+    <div><div class="f-col-title">Connect</div><ul class="f-links"><li><a id="footerEmail"></a></li><li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li></ul></div>
+  </div>
+  <div class="f-bottom"><span>&copy; 2026 WONTech, Inc. All rights reserved.</span><span>Built by WONTech</span></div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
